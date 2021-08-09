@@ -46,7 +46,7 @@ while True:
     
     key = cv2.waitKey(1) & 0xFF
     if key == ord("k"):
-        print(str(total)+" image captured!")
+        print(str(total+1)+" image captured!")
         p = os.path.sep.join([args["output"], "{}.png".format(
 	    str(total).zfill(5))])
         cv2.imwrite(p,orig)
